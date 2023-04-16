@@ -4,7 +4,7 @@ def read_input():
     inpt = input()
     if 'I' in inpt:
         pattern = input().strip()
-        text = input.strip()
+        text = input().strip()
     elif 'F' in inpt:
         with open('./tests/06')as file:
             data = file.read().split
