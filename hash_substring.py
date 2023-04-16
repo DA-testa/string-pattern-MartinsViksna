@@ -7,8 +7,9 @@ def read_input():
         text = input.strip()
     elif 'F' in inpt:
         with open('./tests/06')as file:
-            pattern = file.readline().rstrip
-            text = file.readline().rstrip
+            data = file.read().split
+            pattern = data[0].strip
+            text = data[1].strip
     return (pattern, text)
    
 
